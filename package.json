@@ -1,0 +1,12 @@
+{
+  "name": "moltbook-moltitor",
+  "version": "2.0.0",
+  "description": "Is Moltbook up? 🦞",
+  "scripts": {
+    "check": "node browser-check.js",
+    "generate": "./generate.sh"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
