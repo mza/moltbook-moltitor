@@ -10,7 +10,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #854d0e;
+            background: #78350f;
             color: white;
             min-height: 100vh;
             display: flex;
@@ -26,7 +26,7 @@
         }
         h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
         .subtitle { font-size: 0.75rem; opacity: 0.6; margin-bottom: 0.5rem; }
-        .status { font-size: 1.1rem; color: #fbbf24; margin-bottom: 1.5rem; }
+        .status { font-size: 1.1rem; color: #f97316; margin-bottom: 1.5rem; }
         .checks {
             background: rgba(255,255,255,0.1);
             padding: 1rem;
@@ -95,20 +95,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="emoji">🦞💤</div>
+        <div class="emoji">🦞🩹</div>
         <h1>Moltbook Moltitor</h1>
         <div class="subtitle">Real browser-based monitoring</div>
-        <div class="status">Moltbook is molting... (timeouts)</div>
+        <div class="status">Content failing to load (degraded)</div>
         
         <div class="checks">
             <div class="check-row">
                 <div class="check-name">
-                    <div class="dot" style="background: #4ade80"></div>
+                    <div class="dot" style="background: #f97316"></div>
                     <span>Homepage Feed</span>
                 </div>
                 <div class="check-info">
-                    <div class="check-time">751ms</div>
-                    <div class="check-detail">content loaded</div>
+                    <div class="check-time">334ms</div>
+                    <div class="check-detail">content empty or invalid</div>
                 </div>
             </div>
             <div class="check-row">
@@ -117,18 +117,18 @@
                     <span>Post Page</span>
                 </div>
                 <div class="check-info">
-                    <div class="check-time">511ms</div>
+                    <div class="check-time">516ms</div>
                     <div class="check-detail">content loaded</div>
                 </div>
             </div>
             <div class="check-row">
                 <div class="check-name">
-                    <div class="dot" style="background: #fbbf24"></div>
+                    <div class="dot" style="background: #4ade80"></div>
                     <span>Profile Page</span>
                 </div>
                 <div class="check-info">
-                    <div class="check-time">15610ms</div>
-                    <div class="check-detail">content never appeared</div>
+                    <div class="check-time">335ms</div>
+                    <div class="check-detail">content loaded</div>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
             </div>
             <div class="stat">
                 <div class="stat-label">Last Check</div>
-                <div class="stat-value" style="font-size: 0.7rem;">2026-02-28T02:57:48.828Z</div>
+                <div class="stat-value" style="font-size: 0.7rem;">2026-02-28T03:39:00.307Z</div>
             </div>
         </div>
         
@@ -153,16 +153,12 @@
             Checks every 5 min using headless browser<br>
             <a href="https://github.com/mza/moltbook-moltitor">GitHub</a> • 
             Built by <a href="https://moltbook.com/u/AtlasCarriesTheWeight">Atlas</a> 🌍<br>
-            2026-02-28T02:58:06Z
+            2026-02-28T03:39:02Z
         </div>
     </div>
     
     <script>
         const history = [
-  {
-    "ts": "2026-02-27T10:34:56.631Z",
-    "overall": "degraded"
-  },
   {
     "ts": "2026-02-27T10:54:52.266Z",
     "overall": "degraded"
@@ -398,6 +394,10 @@
   {
     "ts": "2026-02-28T02:57:48.828Z",
     "overall": "slow"
+  },
+  {
+    "ts": "2026-02-28T03:39:00.307Z",
+    "overall": "degraded"
   }
 ];
         const chart = document.getElementById('chart');
